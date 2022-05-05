@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+    background-color: white;
+    font-size:15px;
+}
+#card{
+    position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:330px;
+height:min-content;
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+}
+#sedan{
+background-color: rgb(226,133,37);
+border-radius: 10px 10px 0px 0px;
+}
+#SUV{
+    background-color: rgb(1,105,114);
+}
+#luxury{
+    background-color: rgb(0,64,63);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.box{
+    padding:30px;
+}
+h1{
+    color:hsl(0, 0%, 95%);
+    font-family:'Big Shoulders Display';
+    font-weight:700;
+    font-size:18;
+    text-transform: uppercase;
+
+}
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family:'Lexend Deca';
+    font-weight:400;
+    font-size:15px;
+    line-height: 2;
+}
+#sedan button{
+    background-color:hsl(0, 0%, 95%);
+    color:rgb(226,133,37);
+    padding: 15px 30px 15px 30px;
+    border-radius:30px;
+    border:0px;
+    font-family:'Lexend Deca';
+}
+
+#SUV button{
+    background-color: hsl(0, 0%, 95%);
+    color:rgb(1,105,114);
+    padding:15px 30px 15px 30px;
+    border-radius:30px;
+    border:0px;
+    font-family: 'Lexend Deca';
+}
+#luxury button{
+    background-color: hsl(0, 0%, 95%);
+    color:rgb(0,64,63);
+    padding:15px 30px 15px 30px;
+    border-radius:30px;
+    font-family: 'Lexend Deca';
+}
+
+#sedan button:hover{
+    background-color:rgb(226,133,37) ;
+    color:white;
+    border: 1px solid white;
+}
+
+#SUV button:hover{
+    background-color:rgb(1,105,114) ;
+    color:white;
+    border: 1px solid white;
+}
+
+#luxury button:hover{
+    background-color:rgb(0,64,63) ;
+    color:white;
+    border: 1px solid white;
+}
+
+@media screen and (min-width:1250px){
+    #card{
+        width:990px;
+        height:min-content;
+        flex-direction: row;
+
+    }
+    p{
+        line-height:2.2;
+        padding-bottom:50px;
+    }
+
+    #sedan{
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #luxury{
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
